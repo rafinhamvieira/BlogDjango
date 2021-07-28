@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{%endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+</head>
+
+<body>
+    <header>
+        <h1>Rafael blogzao</h1>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    
+</body>
+<footer>
+        <p>Contate-nos</p>
+        <u><a href="https://www.instagram.com/rafinham_vieira/">Instagram</a></u>
+        <u><a href="tel:+5554996405569">Telefone</a></u>
+        <u><a href="mailto:rafacorreavieira2020@gmail.com">Email</a></u>
+</footer>
+
+</html>
